@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s linear;
+}
+
+$cabecario-color:#c87e6b;
+$ptext-color: #e7e4db;
+$stext-color:#765a33;
+$tertext-color:#484a4b;
+$qtext-color:chartreuse;
+$quinta-color:yellowgreen;
+$pfont-family:'Montserrat';
+$sfont-family:'Playfair Display';
+$tfont-family:'Josefin Slab';
+$qfont-family:'Montserrat Alternates';
+
+
+
+.wrapper{
+    background-image: url(/img/Texture.png);
+    width: 100%;
+    height: 100vh;
+}
+
+.cabe{
+    background-color: $cabecario-color;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position:fixed;
+
+    .logo{
+        margin-top: 1rem;
+    }
+    
+    .menu{
+        margin-top: 2rem;
+        
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    padding: 0.5rem 1.5rem;
+                    font-family: $pfont-family;
+                    font-weight: bold;
+                    color: $ptext-color;
+                    border-radius: .5rem;
+                    &:hover{
+                        background: $qtext-color;
+                        color: white;
+                    }
+                }
+
+                .button{
+                margin-left: 2rem;
+                
+                button{
+                background: none;
+                border-style: none;
+                border: 0.2rem solid white;
+                border-radius: 1em 1em;
+                color:$ptext-color;
+                cursor: pointer;
+                font-family: $pfont-family;
+                font-weight: bold;
+                padding: 0.3rem 0;
+                width: 8rem;
+
+                &:hover{
+                    background: $quinta-color;
+                }
+                
+
+
+                }
+
+                }
+            }
+        }
+    }
+    
+    .icon{
+        margin-top: 1rem;
+        display: flex;
+        cursor: pointer;
+       
+        div{
+            
+            padding:1rem;
+            
+            &:hover{
+                transform: rotate(360deg);
+                background: chartreuse;
+            }
+            &:nth-child(3){
+                margin-top: 0.4rem;
+            }
+        }
+        #menu{
+            display: none;
+        }
+
+        
+    }
+    
+}
+
+.section{
+    display: flex;
+    height: 100vh;
+
+    .imagem{
+     margin-top: 3.5rem;
+    img{
+        height: 93vh;
+        width: 50vw;
+        
+    }
+    }
+    .text{
+        margin-top: 13em;
+        text-align: center;
+        h1{
+            color:$tertext-color;
+            font-size: 3.2em;
+            font-family: $sfont-family;
+        }
+        h2{
+            color: $tertext-color;
+            font-size: 4.3em;
+            font-family: $sfont-family;
+        }
+        h3{
+            color:$stext-color;
+            font-size: 1.7em;
+            font-family: $pfont-family;
+            padding: 0.5rem 0;
+        }
+        p{  
+            color: $stext-color;
+            font-family: $tfont-family;
+            font-weight: bolder;
+            font-size: 1.2em;
+            margin-left: 9rem;
+            text-align: justify;
+            width: 60%;
+
+        }
+        .button{
+        display: flex;
+        margin-top: 3em;
+        margin-left: 17rem;
+         
+        div{
+            padding:0.8rem;
+            button{
+                cursor: pointer;
+                border-style: none;
+                background: none;
+            }
+            .button1{
+                background: #787878;
+                border: 0.2rem solid #787878;
+                border-radius: 1em 1em;
+                border-style: none;
+                color: $ptext-color;
+                font-family: $qfont-family;
+                font-weight: bold;
+                padding: 0.5em;
+                width: 6rem;
+
+                &:hover{
+                    background:$quinta-color;
+                }
+            }
+
+            .button2{
+                margin-top: 0.5em;
+                font-family: $qfont-family;
+                font-weight: bold;
+            }
+        }
+            
+        
+        }
+    }
+
+    .flor{
+        position: absolute;
+
+        .flor1{
+            position: absolute;
+            top: 37em;
+            img{
+                height: 44vh;
+            }
+            
+        }
+        .flor2{
+            position: absolute;
+            left:37rem;
+            top: 8em;
+
+        }
+    }
+}
+
+.section2{
+width: 100%;
+background: $stext-color;
+display: flex;
+justify-content: center;
+   div{
+       padding: 4em 8em;
+       color: $ptext-color;
+       h1{
+           font-family:$sfont-family ;
+           font-size: 3em;
+       }
+       p{
+           font-family: $qfont-family;
+           font-weight: bold;
+           font-size: 1em;
+       }
+       .p4{
+        margin-left: -3.9em;
+       }
+   }
+}
+
+.section3{
+    background-image: url(/img/Texture.png);
+    height: 130vh;
+    width:100%;
+    overflow: hidden;
+    
+    .text{
+    text-align: center;
+    position: relative;
+    top: 8rem;
+    h1{
+        font-family: $sfont-family;
+        font-size: 3em;
+    }
+
+    p{
+        color: $stext-color;
+        font-family: $pfont-family;
+       
+    }
+    }
+
+    .swiper-mySwiper{
+        display: flex;
+        margin-top: 15rem;
+        margin-left: 2rem;
+        
+        .swiper-wrapper{
+            gap: 3rem;
+            width: 15%;
+            height: 58%;
+            display: flex;
+            .swiper-slide{
+            box-shadow: 5px 5px 5px 5px  rgba(143, 143, 143, 0.452);
+            background: white;
+        .tex{
+            margin-top: 1rem;
+            margin-left: 2rem;
+        h1{
+           font-size: 2.7em;
+           font-family: $sfont-family;
+        }
+        p{  
+            color: $stext-color;
+            font-family: $qfont-family;
+            font-weight: bold;
+            font-size: 0.8em;
+            text-align: justify;
+            padding: 1rem 0;
+            width: 89%;
+        }
+
+        .button{ 
+            padding: 1rem 0;  
+            
+        button{
+            background: #787878;
+            border: 0.2rem solid #787878;
+            border-radius: 1em 1em;
+            color: $ptext-color;
+            cursor: pointer;
+            font-family: $qfont-family;
+            font-weight: bold;
+            font-size: 0.8em;
+            padding: 0.5em;
+            width: 8rem;
+
+            &:hover{
+                background: $qtext-color;
+                border: 0.2rem solid $qtext-color;
+            }
+        }
+
+        }
+            }
+        }
+    }
+    
+    }
+
+    .leaf{
+        position: absolute;
+
+        .leaf1{
+            position: absolute;
+            top: -47rem; left: 5rem;
+        }
+        .leaf2{
+            position: absolute;
+            top: -47rem; left: 85rem;
+        }
+        .leaf3{
+            position: absolute;
+            top: 4rem; left: 5rem;
+        }
+        .leaf4{
+            position: absolute;
+            top: 3rem; left: 85rem;
+        }
+    }
+
+
+}
+
+/*media queris*/
+@media (max-width:1080px){
+    .cabe{
+
+        width: 61%;
+        .menu{
+            margin-top: 1.5rem;
+            ul{
+                li{
+                    a{
+                        padding: 0.2rem 1rem;
+
+                        &:active{
+                            background: $qtext-color;
+                            color: $ptext-color;
+                        }
+
+                        }
+                    .button{
+                        button{
+                            &:active{
+                            background:$quinta-color;
+                            }
+                        }
+                    }
+                    }
+                }
+        }
+        .icon{
+             margin-top:0.5rem;
+    
+            div{
+                    
+                &:active{
+                transform: rotate(360deg);
+                background: chartreuse;
+                    }
+                }
+        }
+    }
+
+    .section{
+        height: 58vh;
+        
+        .imagem{
+            img{
+                height:53.5vh;
+                
+            }
+        }
+
+        .text{
+            h1{
+            font-size: 2em;
+            }
+            h2{
+                font-size: 3.5em;
+            }
+            h3{
+            font-size: 1.4em;
+            padding: 1rem 0;
+            }
+            p{
+                margin-left: 4em;
+                font-size: 1em;
+                width: 74%;
+            }
+        .button{
+            margin-top: 2rem;
+            margin-left: 8rem;
+        .button1{
+            &:active{
+                background: $qtext-color;
+            }
+        }
+        }
+
+        }
+
+        .flor{
+            .flor1{
+                img{
+                    height: 20vh;
+                }
+            }
+
+            .flor2{
+                left:20rem;
+
+            }
+        }
+    }
+
+    .section2{
+        width: 100%;
+        div{
+            padding: 2em 5em;
+        h1{
+            font-size: 2em;
+        }
+        p{
+            font-size: 0.8em;
+        }
+        .p4{
+            margin-left: 0;
+        }
+        }
+    }
+    .section3{
+        width: 90%;
+
+        .card{
+            height: 38%;
+        }
+        .leaf1{
+            top: -67rem; left: 3rem;
+        }
+        .leaf2{
+           
+            top: -67rem; left: 50rem;
+        }
+    }
+        
+}
+

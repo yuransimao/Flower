@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.wrapper {
+  background-image: url(/img/Texture.png);
+  width: 100%;
+  height: 100vh;
+}
+
+.cabe {
+  background-color: #c87e6b;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+}
+
+.cabe .logo {
+  margin-top: 1rem;
+}
+
+.cabe .menu {
+  margin-top: 2rem;
+}
+
+.cabe .menu ul li {
+  display: inline-block;
+}
+
+.cabe .menu ul li a {
+  padding: 0.5rem 1.5rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #e7e4db;
+  border-radius: .5rem;
+}
+
+.cabe .menu ul li a:hover {
+  background: chartreuse;
+  color: white;
+}
+
+.cabe .menu ul li .button {
+  margin-left: 2rem;
+}
+
+.cabe .menu ul li .button button {
+  background: none;
+  border-style: none;
+  border: 0.2rem solid white;
+  border-radius: 1em 1em;
+  color: #e7e4db;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-weight: bold;
+  padding: 0.3rem 0;
+  width: 8rem;
+}
+
+.cabe .menu ul li .button button:hover {
+  background: yellowgreen;
+}
+
+.cabe .icon {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.cabe .icon div {
+  padding: 1rem;
+}
+
+.cabe .icon div:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  background: chartreuse;
+}
+
+.cabe .icon div:nth-child(3) {
+  margin-top: 0.4rem;
+}
+
+.cabe .icon #menu {
+  display: none;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.section .imagem {
+  margin-top: 3.5rem;
+}
+
+.section .imagem img {
+  height: 93vh;
+  width: 50vw;
+}
+
+.section .text {
+  margin-top: 13em;
+  text-align: center;
+}
+
+.section .text h1 {
+  color: #484a4b;
+  font-size: 3.2em;
+  font-family: "Playfair Display";
+}
+
+.section .text h2 {
+  color: #484a4b;
+  font-size: 4.3em;
+  font-family: "Playfair Display";
+}
+
+.section .text h3 {
+  color: #765a33;
+  font-size: 1.7em;
+  font-family: "Montserrat";
+  padding: 0.5rem 0;
+}
+
+.section .text p {
+  color: #765a33;
+  font-family: "Josefin Slab";
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-left: 9rem;
+  text-align: justify;
+  width: 60%;
+}
+
+.section .text .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+  margin-left: 17rem;
+}
+
+.section .text .button div {
+  padding: 0.8rem;
+}
+
+.section .text .button div button {
+  cursor: pointer;
+  border-style: none;
+  background: none;
+}
+
+.section .text .button div .button1 {
+  background: #787878;
+  border: 0.2rem solid #787878;
+  border-radius: 1em 1em;
+  border-style: none;
+  color: #e7e4db;
+  font-family: "Montserrat Alternates";
+  font-weight: bold;
+  padding: 0.5em;
+  width: 6rem;
+}
+
+.section .text .button div .button1:hover {
+  background: yellowgreen;
+}
+
+.section .text .button div .button2 {
+  margin-top: 0.5em;
+  font-family: "Montserrat Alternates";
+  font-weight: bold;
+}
+
+.section .flor {
+  position: absolute;
+}
+
+.section .flor .flor1 {
+  position: absolute;
+  top: 37em;
+}
+
+.section .flor .flor1 img {
+  height: 44vh;
+}
+
+.section .flor .flor2 {
+  position: absolute;
+  left: 37rem;
+  top: 8em;
+}
+
+.section2 {
+  width: 100%;
+  background: #765a33;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section2 div {
+  padding: 4em 8em;
+  color: #e7e4db;
+}
+
+.section2 div h1 {
+  font-family: "Playfair Display";
+  font-size: 3em;
+}
+
+.section2 div p {
+  font-family: "Montserrat Alternates";
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.section2 div .p4 {
+  margin-left: -3.9em;
+}
+
+.section3 {
+  background-image: url(/img/Texture.png);
+  height: 130vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section3 .text {
+  text-align: center;
+  position: relative;
+  top: 8rem;
+}
+
+.section3 .text h1 {
+  font-family: "Playfair Display";
+  font-size: 3em;
+}
+
+.section3 .text p {
+  color: #765a33;
+  font-family: "Montserrat";
+}
+
+.section3 .swiper-mySwiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15rem;
+  margin-left: 2rem;
+}
+
+.section3 .swiper-mySwiper .swiper-wrapper {
+  gap: 3rem;
+  width: 15%;
+  height: 58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section3 .swiper-mySwiper .swiper-wrapper .swiper-slide {
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(143, 143, 143, 0.452);
+          box-shadow: 5px 5px 5px 5px rgba(143, 143, 143, 0.452);
+  background: white;
+}
+
+.section3 .swiper-mySwiper .swiper-wrapper .swiper-slide .tex {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.section3 .swiper-mySwiper .swiper-wrapper .swiper-slide .tex h1 {
+  font-size: 2.7em;
+  font-family: "Playfair Display";
+}
+
+.section3 .swiper-mySwiper .swiper-wrapper .swiper-slide .tex p {
+  color: #765a33;
+  font-family: "Montserrat Alternates";
+  font-weight: bold;
+  font-size: 0.8em;
+  text-align: justify;
+  padding: 1rem 0;
+  width: 89%;
+}
+
+.section3 .swiper-mySwiper .swiper-wrapper .swiper-slide .tex .button {
+  padding: 1rem 0;
+}
+
+.section3 .swiper-mySwiper .swiper-wrapper .swiper-slide .tex .button button {
+  background: #787878;
+  border: 0.2rem solid #787878;
+  border-radius: 1em 1em;
+  color: #e7e4db;
+  cursor: pointer;
+  font-family: "Montserrat Alternates";
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0.5em;
+  width: 8rem;
+}
+
+.section3 .swiper-mySwiper .swiper-wrapper .swiper-slide .tex .button button:hover {
+  background: chartreuse;
+  border: 0.2rem solid chartreuse;
+}
+
+.section3 .leaf {
+  position: absolute;
+}
+
+.section3 .leaf .leaf1 {
+  position: absolute;
+  top: -47rem;
+  left: 5rem;
+}
+
+.section3 .leaf .leaf2 {
+  position: absolute;
+  top: -47rem;
+  left: 85rem;
+}
+
+.section3 .leaf .leaf3 {
+  position: absolute;
+  top: 4rem;
+  left: 5rem;
+}
+
+.section3 .leaf .leaf4 {
+  position: absolute;
+  top: 3rem;
+  left: 85rem;
+}
+
+/*media queris*/
+@media (max-width: 1080px) {
+  .cabe {
+    width: 61%;
+  }
+  .cabe .menu {
+    margin-top: 1.5rem;
+  }
+  .cabe .menu ul li a {
+    padding: 0.2rem 1rem;
+  }
+  .cabe .menu ul li a:active {
+    background: chartreuse;
+    color: #e7e4db;
+  }
+  .cabe .menu ul li .button button:active {
+    background: yellowgreen;
+  }
+  .cabe .icon {
+    margin-top: 0.5rem;
+  }
+  .cabe .icon div:active {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    background: chartreuse;
+  }
+  .section {
+    height: 58vh;
+  }
+  .section .imagem img {
+    height: 53.5vh;
+  }
+  .section .text h1 {
+    font-size: 2em;
+  }
+  .section .text h2 {
+    font-size: 3.5em;
+  }
+  .section .text h3 {
+    font-size: 1.4em;
+    padding: 1rem 0;
+  }
+  .section .text p {
+    margin-left: 4em;
+    font-size: 1em;
+    width: 74%;
+  }
+  .section .text .button {
+    margin-top: 2rem;
+    margin-left: 8rem;
+  }
+  .section .text .button .button1:active {
+    background: chartreuse;
+  }
+  .section .flor .flor1 img {
+    height: 20vh;
+  }
+  .section .flor .flor2 {
+    left: 20rem;
+  }
+  .section2 {
+    width: 100%;
+  }
+  .section2 div {
+    padding: 2em 5em;
+  }
+  .section2 div h1 {
+    font-size: 2em;
+  }
+  .section2 div p {
+    font-size: 0.8em;
+  }
+  .section2 div .p4 {
+    margin-left: 0;
+  }
+  .section3 {
+    width: 90%;
+  }
+  .section3 .card {
+    height: 38%;
+  }
+  .section3 .leaf1 {
+    top: -67rem;
+    left: 3rem;
+  }
+  .section3 .leaf2 {
+    top: -67rem;
+    left: 50rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
